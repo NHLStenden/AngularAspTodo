@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace AngularAspTodo.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class TodoController : ControllerBase
     {
         private readonly ApplicationDbContext _db;

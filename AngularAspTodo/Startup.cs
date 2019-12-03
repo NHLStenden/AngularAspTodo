@@ -52,7 +52,7 @@ namespace AngularAspTodo
             {
                 for (int i = 0; i < 10; i++)
                 {
-                    db.Todos.Add(new Todo() {Description = "Desc{i}", Completed = i % 2 == 0});
+                    db.Todos.Add(new Todo() {Description = $"Descr {i}", Completed = i % 2 == 0});
                 }
 
                 db.SaveChanges();
